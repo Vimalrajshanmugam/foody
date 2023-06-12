@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/Home_background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 1.5s;
+}
+.welcome > h1{
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.welcome > h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+.welcome > button{
+    margin-top: 40px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.welcome > button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+@keyframes animate{
+    0%{
+        bottom:-500px;
+    }
+    100%{
+        bottom:10px;
+    }
+}
+@media all and (max-width:990px){
+    .welcome > h1{
+        font-size: 3.7rem;
+    }
+}
+@media all and (max-width:965px){
+    .welcome {
+        width: 80%;
+    }
+}
+@media all and (max-width:640px){
+    .Home{
+        background-size: cover;
+        
+    }
+    .welcome {
+        width: 100%;
+    }
+    .welcome > h1{
+        font-size: 3rem;
+    }
+    .welcome > h4{
+        font-size: 2rem;
+    }
+    .welcome > button{
+        margin-top: 20px;
+        padding: 10px 20px;
+        letter-spacing: 2px;
+    }
+}
+@media all and (max-width:577px){
+    .Home{
+        background-size: cover;
+        align-items: center;
+    }
+    .welcome {
+        width: 100%;
+    }
+    .welcome > h1{
+        font-size: 2rem;
+    }
+    .welcome > h4{
+        font-size: 1rem;
+    }
+    .welcome > button{
+        margin-top: 20px;
+        padding: 8px 15px;
+        letter-spacing: 1.5px;
+    }
+}
+.Service{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.service_items{
+    height: 45%;
+    width: 22%;
+    margin-top: 10px;
+}
+.service_items > img{
+    border-radius: 50%;
+    margin: 10px;
+}
+.service_items > h3{
+    margin: 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff7404;
+    font-weight:bold;
+}
+.service_items > p{
+    text-align: left;
+    word-spacing: 3px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(56, 49, 49);
+}
+@media all and (max-width:991px){
+    .Service{
+        height: auto;
+    }
+}
+@media all and (max-width:970px){
+    .Service{
+        flex-wrap: wrap;
+
+    }
+    .service_items{
+        width: 40%;
+        margin: 10px;
+    }   
+}
+@media all and (max-width:670px){
+    .Service{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: auto;
+
+    }
+    .service_items{
+        width: 80%;
+        margin: 10px;
+    } 
+    .service_items >h3{
+        text-align: left;
+    }  
+}
+.main_service{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+.wedding_content, .occasion_content{
+    height: 45%;
+    width: 50%;
+    margin: 1%;
+    padding: 5px;
+    
+}
+.wedding_img, .occasion_img{
+    height: 45%;
+    width: 30%;
+    background-color: beige;
+    box-shadow: 5px 5px 15px black;
+}
+.wedding_img > img, .occasion_img > img{
+    height: 100%;
+    width: 100%;
+}
+.wedding_content >h1, h3, p, .occasion_content>h1, h3, p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 2px;
+    text-transform: capitalize;
+    color: rgb(83, 74, 69);
+}
+.wedding_content > h3, .occasion_content >h3{
+    text-decoration: underline;
+}
+.wedding_content >h1, .occasion_content>h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.wedding_content >p, .occasion_content>p{
+    color: rgb(56, 49, 49);
+    line-height: 30px;
+}
+@media all and (max-width:670px){
+    .main_service{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .wedding_content, .occasion_content{
+        width: 80%;
+    }
+    .wedding_img, .occasion_img{
+        width: 300px;
+        height: 250px;
+    }
+}
+footer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.footer_aboutUs{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hours{
+    height: 100%;
+    width: 30%;
+    
+}
+.quick_links{
+    height: 40%;
+    width: 20%;
+    margin-top: 50px;
+}
+.footer_title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+}
+.footer_para{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    line-height: 25px;
+}
+.footer_icons{
+    width: 40%;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.Footer_subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    
+}
+.opening_hours{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.opening_hours > h3{
+    margin: 8px 0px;
+}
+.contact{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.quick_links > ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+.quick_links > ul > li > a{
+    text-decoration: none;
+    color: #ff7404;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quick_links > ul > li > a:hover{
+    color: brown;
+}
+@media all and (max-width:870px){
+
+    .footer_aboutUs{
+        width:60% ;
+    }
+
+}
+@media all and (max-width:800px){
+    footer{
+        flex-direction: column;
+        height:900px;    
+    }
+    .hours{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70%;
+    }
+    .footer_aboutUs{
+        width:70% ;
+    }
+    .contact{
+        height:70% ;
+    }
+    .quick_links{
+        margin-top: 0px;
+    }
+@media all and (max-width:640px) {
+    footer{
+        margin-left: 10px;
+        width: auto;
+    }
+    .footer_aboutUs{
+        width: 100%;
+    }
+    .footer_icons{
+        height: 25px;
+    }
+    .hours{
+        width: 100%;
+    }
+    .quick_links{
+        width: 100%;
+    }
+    
+}}

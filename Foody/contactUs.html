@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/contactUs.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav_title">
+            <h1>Foody</h1>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Receips.html">Receips</a></li>
+                <li><a href="./Service.html">Service</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./News.html">News</a></li>
+            </ul>
+        </div>
+        <div class="nav_btn">
+            <button><a href="./contactUs.html">Contact us</a></button>
+        </div>
+    </nav>
+    <section class="Home" id="#Home">
+        <div class="welcome">
+            <h1>contact the foody</h1>
+            <h4>Don't forget to subscribe</h4>
+            <button>get started</button>
+        </div>
+    </section>
+    <section class="form_address">
+        <div class="form">
+            
+                <label class="form_label">Name</label>
+                <input type="text" name="name" onfocus="border()" id="name">
+                <div id="nameInfo" style="font-family: 'Poppins', sans-serif;"></div>
+                <label class="form_label">Phone</label>
+                <input type="text" name="phoneNumber" onfocus="border()" id="number">
+                <div id="numberInfo" style="font-family: 'Poppins', sans-serif;"></div>
+                <label class="form_label">Email</label>
+                <input type="text" name="email" onfocus="border()" id="email">
+                <div id="emailInfo" style="font-family: 'Poppins', sans-serif;"></div>
+                <label class="form_label"> write message</label>
+                <input type="text" id="message_box" name="message" placeholder="if any(optional)" onfocus="border()" >
+                <button onclick="validate()">send message</button>
+            
+        </div>
+        <div class="contactDetails">
+            <h2>contact details</h2>
+            <div class="contact_icons">
+                <img src="./CSS/images/location_dot_icon.png">
+            </div>
+            <div class="contactPara">
+                <p>34 Street Name, City Name Here, United States</p>
+            </div>
+            <div class="contact_icons">
+                <img src="./CSS/images/phone_communication_icon.png">
+            </div>
+            <div class="contactPara">
+                <p>+1 242 4942 290</p>
+            </div>
+            <div class="contact_icons">
+                <img src="./CSS/images/mail_message_icon.png">
+            </div>
+            <div class="contactPara">
+                <p>info@yourdomain.com</p>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="testimonal">
+    <div class="testimonal_title">
+        <h1>testimonal</h1>
+    </div>
+    <div class="testimonal_para">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, ipsam eligendi sint nisi doloremque quibusdam earum iure impedit dignissimos voluptatem nihil reiciendis, praesentium et magni reprehenderit doloribus perferendis,
+             tenetur est aperiam inventore cumque sunt. Ullam et voluptate quidem nulla quae, temporibus, deleniti sint asperiores nihil tempore eum minima eligendi fuga.</p>
+    </div>
+    <div class="testimonal_person">
+        <div class="person_image"><img src="./CSS/images/person_1.jpg" height="80px" width="80px"></div>
+        <div class="person_details"><h3>milke richardson</h3>
+        <p>CEO Xyz company</p>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="subscribe_content">
+        <h3>subscribe letter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio quos aperiam, ratione quo necessitatibus vel dolorum beatae. Odio, nihil.
+        </p>   
+    </div>
+    <div class="subscribe_input">
+        <input type="email" name="email" placeholder="Enter email address" id="mail">
+        
+        <button onclick="mailvalidate()" >subscribe</button>
+    </div>
+</section>
+<footer>
+    <div class="footer_aboutUs">
+        <h3 class="footer_title">About Us</h3>
+        <p class="footer_para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Eligendi ut minima possimus voluptatibus alias incidunt dolorem quis aliquam, delectus deserunt.       
+        </p>
+        <div class="footer_icons">
+            <img src="./CSS/images/facebook_social_icon.png">
+            <img src="./CSS/images/twitter_bird_icon.png">
+            <img src="./CSS/images/linkedin_icon.png">
+            <img src="./CSS/images/instagram logo_icon.png">
+        </div>
+    </div>
+    <div class="hours">
+        <div class="opening_hours">
+         <h3 class="footer_title">opening hours</h3>
+        <p class="Footer_subtitle">Sunday-Thursday</p>
+        <p class="footer_para">5AM - 10PM</p>
+        </div>
+        <div class="contact">
+            <h3 class="footer_title">Contact info</h3>
+            <p class="Footer_subtitle">Address:</p>
+            <p class="footer_para">34 Street Name, City Name Here, United States</p>
+            <p class="Footer_subtitle">Phone:</p>
+            <p class="footer_para">+1 242 4942 290 </p>
+            <p class="Footer_subtitle">Email:</p>
+            <p class="footer_para">info@yourdomain.com</p>
+        </div>
+    </div>
+    <div class="quick_links">
+            <h3 class="footer_title">Quick links</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Disclaimers</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+    
+    </div>
+</footer>
+<script src = "foodyFormValidation.js"></script>
